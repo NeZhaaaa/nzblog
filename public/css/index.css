@@ -135,4 +135,38 @@ h1, h2, h3, h4, h5 {
   list-style: none;
   padding: 0;
 }
+
+.dv-login{
+  display:flex;
+  height: 50px;
+  align-items: center;
+}
+
+.dv-login img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.dv-login a {
+  color: #9d9d9d;
+}
+
+.dv-comment {
+  margin-bottom: 20px;
+}
+
+.dv-comment .sp-post-time {
+  color: #9d9d9d;
+  position: absolute;
+  right: 15px;
+  font-weight: 300;
+}
+.comment-avator {
+  width: 64px;
+  height: 64px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=index.css.map */

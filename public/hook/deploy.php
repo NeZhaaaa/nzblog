@@ -21,3 +21,4 @@
 
 		file_put_contents($log_path . '/deploy.log', $output, FILE_APPEND);
 	}
+ 

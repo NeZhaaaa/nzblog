@@ -39,7 +39,17 @@ class Article extends Model
     //添加一条评论
     public function addComment()
     {
-        $this->comments()->create(['body' => request('body')]);
+        if(session('user_name')){
+
+            $comment = array('user_name' => session('user_name'),
+                'avator_url' => session('avator_url'),
+                'body' => request('body'));
+
+            $this->comments()->create($comment);
+        }else{
+            return redirect('/oauth/git');
+        }
+       
     }
 
     /**

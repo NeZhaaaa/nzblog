@@ -99,4 +99,12 @@ return [
         ],
     ],
 
+    'git_auth_url' => 'https://github.com/login/oauth/authorize?client_id=1fb1ecf5c59a98be85b7&scope=user',
+    
+    'git_token_url' => 'https://github.com/login/oauth/access_token',
+
+    'git_cid' => '1fb1ecf5c59a98be85b7',
+
+    'git_secret' => '9a09d911b61e7a73ba28a931746780eca2eb7ef3',
+
 ];

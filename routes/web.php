@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 Auth::routes();
 
-// Route::get('/', 'HomeController@index')->name('home');
-
 Route::get('/','ArticleController@index');
-
-Route::get('/task','TaskController@index');
 
 Route::get('/article/{article}','ArticleController@show');
 
@@ -40,6 +36,19 @@ Route::group([
     Route::get('/categories', 'ApiController@categories');
     Route::get('/subjects', 'ApiController@subjects');
 });
+
+Route::group([
+    'namespace' => 'Oauth', 
+    'prefix' => 'oauth'
+], function(){
+    Route::get('/','OauthController@oauth');
+
+    Route::get('/git','OauthController@login_git');
+
+    Route::get('/logout','OauthController@logout');
+});
+
+
 
 // Route::group(['namespace' => 'Admin','prefix' => 'admin'],function(){
 //     Route::get('/', 'HomeController@index');
