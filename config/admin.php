@@ -151,7 +151,9 @@ return [
      * Settings for extensions.
      */
     'extensions' => [
-
+        'media-manager' => [
+            'disk' => 'admin'
+        ]
     ],
 
     /**

@@ -31,7 +31,7 @@ class OauthController extends Controller
 
         session($user_data);
 
-        return redirect('/');
+        return back();
     }
 
     /**
@@ -48,7 +48,7 @@ class OauthController extends Controller
     public function logout(Request $request)
     {
         $request->session()->flush();
-        return redirect('/');
+        return back();
     }
 
     public function curl_get($url)
